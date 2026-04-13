@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> EcoMart </title>
+	<link rel="stylesheet" type="text/css" href="css/Homestyle.css">	
+  <link rel="stylesheet" href="css/styleforproduct.css" />
+
+  <style>
+
+   #why{
+    color: black;
+    padding-bottom: 18px;
+    }
+
+    .explore{
+    padding: 60px 20px;
+    text-align: center;
+    }
+
+    .explore ul{
+    margin-top: 25px;
+    display: flex;
+     gap: 50px;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+    .explore ul li{
+    background:#e5e5e5;
+    width: 200px;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.3) ;
+    transition: transform 0.3s ease;
+    }
+
+    .explore ul li:hover {
+    transform: translateY(-8px);
+    }
+
+     .explore ul li img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    }
+
+    .top{
+    background-color:#d1fae5;
+    padding: 100px 25px;
+    text-align: center;
+    }
+
+    .top ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    margin-top: 25px;
+    }
+
+    .top ul li{
+    background-color: #00A83E;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow:0px 2px 8px rgba(0,0,0,0.3) ;
+    transition: transform 0.3s ease;
+    }
+
+    .top ul li:hover {
+    transform: translateY(-8px);
+    }
+
+    .top ul li a{
+      text-decoration: none;
+      color: white;
+    }
+
+    #welcome{
+      padding-bottom: 15px;
+      font-size: 50px;
+    }
+    #t1{
+      color: black;
+    }
+    .exp{
+      font-size: 22px;
+      padding-bottom: 6px;
+    }
+    .exp1{
+      font-size: 22px;
+    }
+
+    .log{
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .button-login{
+      color: white;
+      background-color: #00A83E;
+      padding: 70px 25px;
+      text-align: center;
+    }
+    .button-login ul{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-top: 25px;
+    }
+    .button-login ul li{
+      background-color: white;
+      padding: 15px 25px;
+      border-radius: 12px;
+      box-shadow:0px 2px 8px rgba(0,0,0,0.3) ;
+    }
+    .button-login ul li a{
+      text-decoration: none;
+      color:#00A83E;
+    }
+
+    /* Home page product section wrapper */
+.home-products {
+ background-image: url("assests/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0;
+
+  mask-image: linear-gradient(to top,
+  transparent 0%,
+  black 15%,
+  white 85%,
+  transparent 100%);
+}
+
+/* Reduce space above and below titles */
+.home-products .section-title {
+  margin-bottom: 5px;
+}
+
+.home-products .section-title2 {
+  margin-bottom: 30px;
+}
+
+/* Override big padding only for home */
+.home-products .products {
+  padding: 0;
+  margin-left: 0;
+  justify-content: center;
+}
+
+/* Optional: align items nicely */
+.home-products table {
+  margin: auto;
+}
+
+</style>
+</head>
+
+<body> 
+
+  <! navigation bar !>
+
+	<div class = "main">
+	  <div class="logo">	
+      <a href="index.html"> <img src="assests/logo1.png" alt="logo" height="75px" width="85px">
+        </a>
+	  	 
+	  </div>
+
+    <nav class="menu"> 
+    	<ul>
+    		<li> <a href="index.html" class="active"> Home </a></li>
+    		<li> <a href="html/product.html">Products  </a></li>
+    		<li> <a href="html/blog.html"> Blog </a></li>
+    		<li> <a href="Html/reference.html"> Research </a></li>
+    	</ul>
+    </nav>
+    
+      <div class="right side"> 
+        <div id="cart">
+           <a href="#"> <img src="assests/add-to-cart.png" height="40px"> </a>
+        </div>
+         
+    	  <div class="login">
+           <a href="#"> <img src="assests/login.png" height="40px"> </a>
+        </div>
+      </div>
+  </div>
+
+
+
+
+
+    <! WELCOME TOP CONTENT !>
+    <div class="top">
+      <h1 id="welcome"> Welcome to EcoMart</h1>
+      <h2 id="t1">Your destination for sustainable lifestyle products and eco-friendly living</h2>
+      <ul>
+        <li> <a href="Html/product.html"><b> Shop Now </b></a> </li>
+        <li> <a href="Html/about.html"><b>About Us </b> </a></li>
+      </ul>
+    </div>
+
+
+
+
+     <!Explore content   i.e. middle contents !>
+    <div class="explore">
+      <h1 id="why"> Explore EcoMart </h1>
+      <h3 class="exp"> Discover our complete range of services, products, and resources dedicated to </h3>
+      <h3 class="exp1">sustainable living</h3>
+      <ul>
+        <li> 
+          <img src="assests/organic.png" alt="organic"><figcaption> 100% Organic</figcaption> 
+        </li>
+        <li> 
+          <img src="assests/farmer.png" alt="farmers"><figcaption> Direct from Farmers</figcaption> </a>
+        </li>
+        <li> 
+          <img src="assests/eco.png" alt="Eco-Friendly"><figcaption> Eco-Friendly</figcaption>
+           </li>
+        <li> 
+          <img src="assests/price.png" alt="Fair pricing"><figcaption> Fair pricing</figcaption> 
+        </li>
+      </ul>
+    </div>
+
+    
+
+      <!--Best selling products!-->
+      <section class="home-products">
+      <section class="shop-container">
+      <h2 class="section-title" >Shop Sustainably</h2> <br>
+      <h3 class="section-title2" >Top Picks Loved by Nature</h3>
+      </section>
+      
+
+      <div class="products">
+       <table cellspacing="80">
+    <tr>
+      <!-- PRODUCT 1 -->
+      <td>
+        <div class="item">
+          <div class="item-header">
+            <img src="assests/image1.jpg" alt="Tote Bag" />
+            <h2 class="item-header">Tote Bag</h2>
+          </div>
+
+          <div class="star">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+
+          <div class="price">NPR 500.00</div>
+          <button onclick="addToCart('Tote Bag', 500)">Add To Cart</button>
+        </div>
+      </td>
+
+      <!-- PRODUCT 2 -->
+      <td>
+        <div class="item">
+          <div class="item-header">
+            <img src="assests/image2.jpg" alt="Dining Utensils" />
+            <h2 class="item-header">Dining Utensils</h2>
+          </div>
+
+          <div class="star">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+
+          <div class="price">NPR 700.00</div>
+          <button onclick="addToCart('Dining Utensils', 700)">
+            Add To Cart
+          </button>
+        </div>
+      </td>
+
+      <!-- PRODUCT 3 -->
+      <td>
+        <div class="item">
+          <div class="item-header">
+            <img src="assests/image3.jpg" alt="Wooden Toothbrush" />
+            <h2 class="item-header">Wooden Toothbrush</h2>
+          </div>
+
+          <div class="star">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+
+          <div class="price">NPR 800.00</div>
+          <button onclick="addToCart('Wooden Toothbrush', 800)">
+            Add To Cart
+          </button>
+        </div>
+      </td>
+
+      <!-- PRODUCT 4 -->
+      <td>
+        <div class="item">
+          <div class="item-header">
+            <img src="assests/image4.jpg" alt="Wooden Water Bottle" />
+            <h2 class="item-header">Wooden Water Bottle</h2>
+          </div>
+
+          <div class="star">
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i><i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+
+          <div class="price">NPR 900.00</div>
+          <button onclick="addToCart('Wooden Water Bottle', 900)">
+            Add To Cart
+          </button>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+</section>
+
+    <! Login Today  !>
+    <div class="button-login">
+      <h1 class="log"> Ready to Start Your Sustainable Journey? </h1>
+      <p class="exp"> Join thousands of eco-conscious consumers making a difference one </p>
+      <p class="exp1"> purchase at a time</p>
+      <ul>
+        <li> <a href="#"> Login Today </a></li>
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+    <! Footer Compnay ,FollowUs, location. !>
+    <div class="button-content">
+      <div class="brief">
+        <img src="assests/logo1.png" height="80px" width="94px"> <br>
+        <p style="color: white;"> Sustainably sourced, organically grown, delivered with care...</p>
+      </div>
+
+      <div id="Company">
+      <h2 style="color: white;">Company</h2>
+      <ul>
+      	<li> <a href="Html/about.html">About Us </a></li>
+        <li> <a href="Html/product.html">Our Products</a></li>
+        <li> <a href="Html/blog.html">Blog</a></li>
+      </ul>
+      </div>
+    </div>
+
+
+
+<footer>
+	<p> &#169; 2026 EcoMart. All rights reserved. Built with sustainability in mind.</p>
+</footer>
+
+
+</body>
+</html>

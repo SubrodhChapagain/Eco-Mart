@@ -1,0 +1,134 @@
+* {
+  /* for whole page */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+.main {
+  background-color: #ffffff;
+  height: 65px;
+  color: white;
+  display: flex; /* aligns child elements horizontally */
+  align-items: center;
+  padding: 0 25px;
+  border-bottom: 1px solid #ddd; /*#ddd*/ /*  adds a line only at the bottom of an element */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  /*x-axis(shadow moves right) , y-axix(shadow moves down),  blur , rgba */
+}
+
+.logo {
+  padding: 45px;
+}
+
+.logo a {
+  text-decoration: none;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  /* for the search box inside the div class we use input */
+  width: 360px;
+  height: 45px;
+  border: none; /*border remove*/
+  border-radius: 30px; /* border ko edge curve banauxa */
+  background-color: #e5e5e5;
+  padding-left: 35px;
+  font-size: 14px;
+}
+
+/* navigation bar class name menu */
+.menu {
+  flex: 8;
+  display: flex;
+  justify-content: center; /* menu at exact center */
+}
+.menu ul {
+  display: flex;
+  align-items: center;
+  list-style: none; /* list indicator hatauxa */
+}
+.menu ul li {
+  margin: 0 25px;
+}
+
+.menu ul li a:hover {
+  color: lightseagreen;
+}
+
+.menu ul li a {
+  text-decoration: none; /* removes underline of anchor tag(link) */
+  color: black; /*color changes from blue to black*/
+  font-size: 18px;
+}
+
+/*kun page open xa vanera indicate garxa (active)*/
+.menu ul li a.active {
+  /*background-color:lightseagreen; */ /* open garda navigation ma indicate garne background color*/
+  color: lightseagreen; /* text color white */
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.login {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.login button a:hover {
+  /* hover is used in anchor tag (link) to make it look responsive */
+  color: lightseagreen;
+}
+
+#cart {
+  display: flex;
+  align-items: center; /* top ra botton ko center ma rakhxa*/
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+footer {
+  /*copyright part button*/
+  background-color: #1a1a1a;
+  color: white;
+  padding-top: 12px;
+  padding: 20px 0;
+  border-top: 2px solid #2f2f2f;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* button content company, category address... */
+.button-content {
+  background-color: #1a1a1a;
+  color: white;
+  justify-content: space-around;
+  display: flex;
+  padding: 45px;
+}
+
+.button-content ul {
+  list-style: none;
+  text-align: left;
+}
+.button-content ul li {
+  margin-top: 15px;
+}
+
+.button-content ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
